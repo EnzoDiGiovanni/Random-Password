@@ -1,0 +1,44 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  body {
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 20px;
+      border: 1px solid black;
+    }
+
+    #random_password {
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    #generate {
+      font-size: 20px;
+      padding: 20px;
+      background-color: transparent;
+      border: none;
+      border-radius: 10px;
+      transition:
+        background-color,
+        color,
+        0.3s ease;
+
+      &:hover {
+        background-color: green;
+        color: white;
+      }
+    }
+  }
+}
